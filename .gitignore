@@ -1,0 +1,9 @@
+# Windows alternate data stream metadata copied from downloads.
+*:Zone.Identifier
+
+# Keep extracted assets in Git, but avoid duplicate binary archives.
+*.zip
+
+# Generated export/runtime outputs.
+车urdf(1)/export.log
+results/
