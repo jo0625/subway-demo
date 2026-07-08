@@ -28,14 +28,24 @@ The competition work is centered on:
 - `worlds/subway_track_tunnel.world`: Gazebo Classic subway tunnel world.
 - `models/gazebo_train/model.sdf`: Main simulated robot model with lidar,
   camera, IMU, differential drive, and simplified stable collision geometry.
+- `models/custom_robot/model.sdf`: Static Gazebo preview model converted from
+  the imported SolidWorks robot, using normalized mesh names under
+  `models/custom_robot/meshes/`.
 - `urdf/gazebo_train_tf.urdf`: TF/robot_state_publisher URDF for RViz.
+- `urdf/custom_robot_gazebo_preview.urdf`: Fixed-joint RViz preview URDF for
+  the imported custom robot model.
 - `config/nav2_odom_params.yaml`: Nav2 config using `odom` as the global frame.
 - `config/gazebo_lidar.rviz`: RViz config for Gazebo, lidar, and Nav2.
+- `config/inspection_robot.rviz`: Minimal RViz RobotModel view for checking
+  URDF mesh orientation and TF.
 - `scripts/open_subway_tunnel.sh`: Opens the Gazebo tunnel world.
 - `scripts/open_gazebo_rviz_lidar.sh`: Opens Gazebo, robot_state_publisher,
   and RViz.
 - `scripts/open_nav2_demo.sh`: Opens Gazebo, robot_state_publisher, Nav2, and
   RViz.
+- `scripts/open_custom_robot_preview.sh`: Opens the static custom robot preview
+  world in Gazebo.
+- `scripts/open_rviz_robot.sh`: Opens the fixed-joint custom robot in RViz.
 - `scripts/drive_forward.sh`: Publishes `/cmd_vel` for a few seconds, then
   sends zero velocity.
 - `scripts/send_nav_goal_forward.sh`: Sends a Nav2 goal a relative distance
@@ -91,6 +101,20 @@ Open Gazebo, TF publisher, Nav2, and RViz:
 ```bash
 cd ~/my-project/subway-patrol-robot-sim
 ./scripts/open_nav2_demo.sh
+```
+
+Open the imported custom robot in Gazebo preview:
+
+```bash
+cd ~/my-project/subway-patrol-robot-sim
+./scripts/open_custom_robot_preview.sh
+```
+
+Open the imported custom robot in RViz preview:
+
+```bash
+cd ~/my-project/subway-patrol-robot-sim
+./scripts/open_rviz_robot.sh
 ```
 
 Manual drive test:

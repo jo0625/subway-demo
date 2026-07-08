@@ -25,6 +25,18 @@ gazebo worlds/subway_track_tunnel.world
 - 简化巡检小车占位模型
 - 裂缝、渗漏水、支架松脱的可视化标记
 
+## SolidWorks 导入机器人预览
+
+新增的 `custom_robot` 是从 SolidWorks 导出的机器人模型整理出的预览资源，当前定位是“看外观、调朝向、确认 mesh 路径”，还不是带控制器和传感器的可导航仿真车。
+
+- Gazebo 静态预览入口：`./scripts/open_custom_robot_preview.sh`
+- RViz 固定关节预览入口：`./scripts/open_rviz_robot.sh`
+- Gazebo 模型：`models/custom_robot/model.sdf`
+- RViz 预览 URDF：`urdf/custom_robot_gazebo_preview.urdf`
+- 规范 mesh 目录：`models/custom_robot/meshes/`
+
+注意：`urdf/custom_robot.urdf` 保留了原始导出结构，部分 mesh 路径仍指向 `车urdf(1)/meshes/`；预览脚本优先使用已经改到规范 mesh 目录的 `custom_robot_gazebo_preview.urdf`。
+
 ## 调车审核注释
 
 这部分记录 `gazebo_train` 小车从“能显示”调整到“能被 Nav2 控制移动”的关键改动。这里只说明实验小车，不涉及 SolidWorks 导出的 `车urdf(1)`。
