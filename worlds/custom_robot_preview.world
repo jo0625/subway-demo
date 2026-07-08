@@ -45,8 +45,8 @@
     </model>
 
     <include>
-      <!-- Roll pi matches the current RViz preview flip. Adjust this pose if the model is still inverted. -->
-      <pose>0 0 0.35 3.14159 0 0</pose>
+      <!-- Roll pi matches the current RViz preview flip; z places the visual mesh on the floor. -->
+      <pose>0 0 0.04 3.14159 0 0</pose>
       <name>custom_robot</name>
       <uri>model://custom_robot</uri>
     </include>
