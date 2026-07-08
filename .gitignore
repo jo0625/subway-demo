@@ -7,3 +7,8 @@
 # Generated export/runtime outputs.
 车urdf(1)/export.log
 results/
+vision_demo/output/
+
+# Python cache files.
+__pycache__/
+*.pyc
