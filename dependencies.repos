@@ -1,0 +1,5 @@
+repositories:
+  odin_ros_driver:
+    type: git
+    url: https://github.com/manifoldsdk/odin_ros_driver.git
+    version: 13aa528b1da581e2168ac858f8b144f0b4438a7a
