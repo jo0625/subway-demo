@@ -1,0 +1,199 @@
+<sdf version='1.7'>
+  <model name="custom_robot">
+    <static>true</static>
+    <link name='base_link'>
+      <inertial>
+        <pose>-0.003266 0.009696 -0.097276 0 -0 0</pose>
+        <mass>5.34649</mass>
+        <inertia>
+          <ixx>0.113151</ixx>
+          <ixy>-0.000228852</ixy>
+          <ixz>-0.00197414</ixz>
+          <iyy>0.10771</iyy>
+          <iyz>-0.00424618</iyz>
+          <izz>0.0813219</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://custom_robot/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__6020ph_collision_1'>
+        <pose>0 0 -0.291 0 0 -0.11442</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://custom_robot/meshes/motor_6020ph.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__j1_collision_2'>
+        <pose>0 0 -0.291 0 0 -0.11442</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://custom_robot/meshes/j1.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__j2_collision_3'>
+        <pose>0 0 -0.291 0 0 -0.11442</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://custom_robot/meshes/j2.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__j3_collision_4'>
+        <pose>0 0 -0.291 0 0 -0.11442</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://custom_robot/meshes/j3.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__w 1_collision_5'>
+        <pose>0.17206 -0.17206 -0.003646 -3.14159 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://custom_robot/meshes/w1.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__w 2_collision_6'>
+        <pose>-0.17206 -0.17206 -0.003646 -3.14159 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://custom_robot/meshes/w2.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__w 3_collision_7'>
+        <pose>-0.17206 0.17206 -0.003646 -3.14159 -0 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://custom_robot/meshes/w3.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__w 0_collision_8'>
+        <pose>0.17206 0.17206 -0.003646 -3.14159 -0 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://custom_robot/meshes/w0.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__yaw_collision_9'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://custom_robot/meshes/yaw.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://custom_robot/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__6020ph_visual_1'>
+        <pose>0 0 -0.291 0 0 -0.11442</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://custom_robot/meshes/motor_6020ph.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__j1_visual_2'>
+        <pose>0 0 -0.291 0 0 -0.11442</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://custom_robot/meshes/j1.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__j2_visual_3'>
+        <pose>0 0 -0.291 0 0 -0.11442</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://custom_robot/meshes/j2.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__j3_visual_4'>
+        <pose>0 0 -0.291 0 0 -0.11442</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://custom_robot/meshes/j3.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__w 1_visual_5'>
+        <pose>0.17206 -0.17206 -0.003646 -3.14159 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://custom_robot/meshes/w1.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__w 2_visual_6'>
+        <pose>-0.17206 -0.17206 -0.003646 -3.14159 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://custom_robot/meshes/w2.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__w 3_visual_7'>
+        <pose>-0.17206 0.17206 -0.003646 -3.14159 -0 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://custom_robot/meshes/w3.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__w 0_visual_8'>
+        <pose>0.17206 0.17206 -0.003646 -3.14159 -0 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://custom_robot/meshes/w0.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__yaw_visual_9'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://custom_robot/meshes/yaw.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

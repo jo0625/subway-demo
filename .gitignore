@@ -7,3 +7,15 @@
 # Generated export/runtime outputs.
 车urdf(1)/export.log
 results/
+
+# ROS 2 colcon build products.
+/build/
+/install/
+/log/
+
+# Third-party source repositories managed independently.
+/src/odin_ros_driver/
+
+# Python cache files.
+__pycache__/
+*.pyc

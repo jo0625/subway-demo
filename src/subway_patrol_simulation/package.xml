@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>subway_patrol_simulation</name>
+  <version>0.1.0</version>
+  <description>Gazebo worlds, launch files, and simulation configuration for the subway patrol robot.</description>
+  <maintainer email="jo0625@users.noreply.github.com">jo0625</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>subway_patrol_description</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
