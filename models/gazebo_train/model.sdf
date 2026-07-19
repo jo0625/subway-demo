@@ -717,7 +717,7 @@
     -->
     <plugin name="train_planar_move" filename="libgazebo_ros_planar_move.so">
       <ros>
-        <remapping>cmd_vel:=cmd_vel</remapping>
+        <remapping>cmd_vel:=cmd_vel_drive</remapping>
         <remapping>odom:=odom</remapping>
       </ros>
 
